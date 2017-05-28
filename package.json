@@ -1,6 +1,6 @@
 {
   "name": "@savvy-css/typography-garnishes",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Typography garnishes for Savvy CSS.",
   "main": "build/typography-garnishes.css",
   "style": "build/typography-garnishes.css",
