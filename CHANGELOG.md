@@ -1,3 +1,8 @@
+# 0.1.1 &mdash; August 03, 2017
+
+- **[PATCH]** Fix publish build step,
+
+
 # 0.1.0 &mdash; August 03, 2017
 
 - **[ENHANCEMENT]** Add garnishes for font sizes.
