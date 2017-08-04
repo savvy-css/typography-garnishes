@@ -21,7 +21,19 @@ yarn add --dev @savvy-css/typography-garnishes
 npm install --save-dev @savvy-css/typography-garnishes
 ```
 
+
 ## Usage
+
+Within a project that's capable of importing CSS, simply import
+the module by its package name within your own CSS:
+
+```css
+@import "@savvy-css/typography-garnishes";
+```
+
+Importing this module will add [its properties](/lib/typography-garnishes.css) to your project. To override them, simply define them in any portion of your CSS that's imported/processed later.
+
+
 
 
 [npm-badge]: https://img.shields.io/npm/v/@savvy-css/typography-garnishes.svg
