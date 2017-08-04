@@ -1,7 +1,5 @@
 /* @define typography-garnishes */
 
-@import "@savvy-css/typography-variables";
-
 /* -------------- Font-weight garnishes -------------- */
 
 .g-font-bolder { font-weight: bolder !important; }
@@ -22,20 +20,42 @@
 .g-font-900 { font-weight: 900 !important; }
 
 
-/* -------------- Garnishes for inline size tweaks -------------- */
+/* -------------- FONT SIZE GARNISHES -------------- */
 
+/**
+ * Garnishes to have an element's size match a heading varia ble size
+ *
+ * 🔑 These will attempt to reference Savvy's typography variables (https://github.com/savvy-css/typography-variables/blob/master/lib/typography-variables.css)
+ * You can override them to define your own sizes. You can also
+ * not use them at all -- in which case, the default values here will
+ * be applied.
+ */
+.g-font-display--lg { font-size: var(--font-size-display--lg, 3.5rem) !important; }
+.g-font-display--xl { font-size: var(--font-size-display--xl, 7rem) !important; }
+
+.g-font-h1 { font-size: var(--font-size-h1, 3rem) !important; }
+.g-font-h2 { font-size: var(--font-size-h2, 2.2rem) !important; }
+.g-font-h3 { font-size: var(--font-size-h3, 1.875rem) !important; }
+.g-font-h4 { font-size: var(--font-size-h4, 1.75rem) !important; }
+.g-font-h5 { font-size: var(--font-size-h5, 1.5rem) !important; }
+.g-font-h6 { font-size: var(--font-size-h6, 1.25rem) !important; }
+
+/**
+ * Garnishes for inline size tweaks
+ */
 .g-font-smaller { font-size: smaller !important; }
 .g-font-larger { font-size: larger !important; }
 
 
-/* -------------- Garnishes for case adjustments -------------- */
+
+/* -------------- CASING GARNISHES -------------- */
 
 .g-capitalize { text-transform: capitalize !important; }
 .g-lowercase { text-transform: lowercase !important; }
 
 .g-uppercase {
   text-transform: uppercase !important;
-  letter-spacing: var(--letter-spacing--uppercase) !important;
+  letter-spacing: var(--letter-spacing--uppercase, 0.12em) !important;
 }
 
 /**
@@ -48,11 +68,11 @@
 .g-small-caps {
   font-size: 0.666em !important;
   text-transform: uppercase !important;
-  letter-spacing: var(--letter-spacing--uppercase) !important;
+  letter-spacing: var(--letter-spacing--uppercase, 0.12em) !important;
 }
 
 
-/* -------------- Text decoration garnishes -------------- */
+/* -------------- TEXT DECORATION GARNISHES -------------- */
 
 .g-underline { text-decoration: underline !important; }
 .g-no-line { text-decoration: none !important; }
