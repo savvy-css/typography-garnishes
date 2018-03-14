@@ -1,5 +1,9 @@
 /* @define typography-garnishes */
 
+/* -------------- Font-style garnishes -------------- */
+
+.g-font-italic { font-style: italic !important; }
+
 /* -------------- Font-weight garnishes -------------- */
 
 .g-font-bolder { font-weight: bolder !important; }
@@ -7,7 +11,6 @@
 
 .g-font-bold { font-weight: var(--font-weight__bold, bold) !important; }
 .g-font-normal { font-weight: normal !important; }
-.g-font-italic { font-weight: italic !important; }
 
 .g-font-100 { font-weight: 100 !important; }
 .g-font-200 { font-weight: 200 !important; }
